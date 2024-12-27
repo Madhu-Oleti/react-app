@@ -1,0 +1,8 @@
+applications:
+- name: react-app
+  memory: 512M
+  buildpacks:
+    - staticfile_buildpack
+  routes:
+    - route: react-app.cfapps.us10-001.hana.ondemand.com
+  path: ./dist
